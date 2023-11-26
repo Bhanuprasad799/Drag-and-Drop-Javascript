@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:0px) and (max-width:349px) {
+            img{
+                visibility: hidden;
+            }
+            li{
+                display: flex;
+                flex-direction: column;
+                background-color: blueviolet;
+            }
+            
+        }
+ @media screen and (min-width:350px) and (max-width:740px){
+    .main{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .cd{ 
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+       width:700;
+       background-color: burlywood;
+       border: 1px solid yellow;
+       
+    }
+ }
+ @media screen and (min-width:745) and (max-width:1000px) {
+    img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+       
+    }
+    li{
+        display: flex;
+        border-radius: 25px;
+        background-color: green;
+        color: red;
+
+
+    }
+ }
+    
+ 
+    </style>
+</head>
+<body>
+    <div class="cd">
+        <ul>
+            <li>about</li>
+            <li>tourism</li>
+            <li>temples</li>
+            <li>hotels</li>
+            <li>bookings</li>
+        </ul>
+    </div>
+    <div class="main">
+        <img src="../img1.jpeg" height="250" width="250">
+        <img src="../img2.jpeg" height="250" width="250">
+        <img src="../img3.jpeg" height="250" width="250">
+        <img src="../img4.jpeg" height="250" width="250">
+        <img src="../img5.jpeg" height="250" width="250">
+        <img src="../img6.jpeg" height="250" width="250">
+    </div>
+</body>
+</html>
