@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.cd{
+    border: 1px solid blue;
+    display: inline-block;
+    padding: 50px;
+    height: 50px;
+    position: absolute;
+    left: 400px;
+   top: 2px;
+}
+
+
+input[value="r1"]:checked ~ .cd{
+    transform:translate(none);
+}
+input[value="r2"]:checked ~ .cd{
+    transform:rotate(10deg);
+}
+input[value="r3"]:checked ~ .cd{
+    transform: rotate(45deg);
+}
+input[value="r4"]:checked ~ .cd{
+    transform:rotateX(45deg);
+}
+input[value="r5"]:checked ~ .cd{
+    transform:rotateX(10deg);
+}
+input[value="r6"]:checked ~ .cd{
+    transform:rotateY(45deg);
+}
+input[value="r7"]:checked ~ .cd{
+    transform:rotateY(80deg);
+}
+input[value="r8"]:checked ~ .cd{
+    transform:skew(20deg,20deg);
+}
+input[value="r9"]:checked ~ .cd{
+    transform:skew(30deg,30deg);
+}
+input[value="r10"]:checked ~ .cd{
+    transform:skewX(30deg);
+}
+input[value="r11"]:checked ~ .cd{
+    transform:skewX(45deg);
+}
+input[value="r12"]:checked ~ .cd{
+    transform:skewY(30deg);
+}
+input[value="r13"]:checked ~ .cd{
+    transform:skewY(45deg);
+}
+input[value="r14"]:checked ~ .cd{
+    transform:translate(20px,20px);
+}
+input[value="r15"]:checked ~ .cd{
+    transform:translate(30px,30px);
+}
+input[value="r16"]:checked ~ .cd{
+    transform:translate(2,2);
+}
+input[value="r17"]:checked ~ .cd{
+    transform:translate(2,3);
+}
+input[value="r18"]:checked ~ .cd{
+    transform:matrix(0.866,0.7,-0.8,0.866,0,0);
+}
+input[value="r19"]:checked ~ .cd{
+    transform:matrix(0.586,0.8,-0.8,0.586,0,0);    
+}
+input[value="r20"]:checked ~ .cd{
+    transform:matrix(0.586,0.8,-0.8,0.586,40,30);   
+}
+
+
+
+</style>
+</head>
+<body>
+    <div>
+   <input type="radio" name="transform" value="r1" ><label>transform:none;</label><br>
+   <input type="radio" name="transform" value="r2">transform:rotate(10deg);<br><br>
+   <input type="radio" name="transform" value="r3">transform:rotate(45deg);<br><br> 
+   <input type="radio" name="transform" value="r4">transform:rotateX(45deg);<br><br>
+   <input type="radio" name="transform" value="r5">transform:rotateX(10deg);<br><br>
+   <input type="radio" name="transform" value="r6">transform:rotateY(45deg);<br><br> 
+   <input type="radio" name="transform" value="r7">transform:rotateY(80deg);<br><br> 
+   <input type="radio" name="transform" value="r8">transform:skew(20deg,20deg);<br><br>
+   <input type="radio" name="transform" value="r9">transform:skew( 30deg,30deg);<br><br>
+    <input type="radio" name="transform" value="r10">transform:skewX(30deg);<br><br>
+   <input type="radio" name="transform" value="r11">transform:skewX(45deg);<br><br>
+   <input type="radio" name="transform" value="r12">transform:skewY(30deg);<br><br>
+   <input type="radio" name="transform" value="r13">transform:skewY(45deg);<br><br>
+   <input type="radio" name="transform" value="r14">transform:translate(20px,20px);<br><br>
+   <input type="radio" name="transform" value="r15">transform:translate( 30px,30px);<br><br>
+   <input type="radio" name="transform" value="r16">transform:scale(2,2);<br><br>
+   <input type="radio" name="transform" value="r17">transform:scale(2,3);<br><br>
+   <input type="radio" name="transform" value="r18">transform:matrix(0.866,0.7,-0.8,0.866,0,0);<br><br>
+   <input type="radio" name="transform" value="r19">transform:matrix(0.586,0.8,-0.8,0.586,0,0);<br><br>
+   <input type="radio" name="transform" value="r20">transform:matrix(0.586,0.8,-0.8,0.586,40,30);<br><br>
+
+    <div class="cd"></div>
+</div>
+</body>
+</html>
